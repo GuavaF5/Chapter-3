@@ -96,7 +96,7 @@ if st.session_state.show_question:
     if user_answer:
         st.session_state.user_answer = user_answer  # Сохраняем ответ пользователя
         if user_answer.lower() == st.session_state.message.lower():
-            st.success("Правильно! Вы расшифровали сообщение!")
+            st.success("Правильно! Вы расшифровали сообщение! 4 глава: https://chapter-4.streamlit.app/")
         else:
-            st.error(f"Неправильно. Правильный ответ: {st.session_state.message}")
+            st.error(f"Неправильно. Попробуйте ещё раз")
         st.session_state.show_question = False  # Скрываем вопрос после ответа
